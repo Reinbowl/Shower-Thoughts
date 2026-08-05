@@ -1,0 +1,16 @@
+{
+  "name": "Shower Thoughts",
+  "short_name": "Thoughts",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f0f10",
+  "theme_color": "#0a84ff",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

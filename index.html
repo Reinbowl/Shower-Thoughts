@@ -7,8 +7,8 @@
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230f0f10' rx='20'/><text y='.9em' x='50%' text-anchor='middle' font-size='70'>🌦️</text></svg>">
-<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiU2hvd2VyIFRob3VnaHRzIiwic2hvcnRfbmFtZSI6IlRob3VnaHRzIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiMwZjBmMTAiLCJ0aGVtZV9jb2xvciI6IiMwYTg0ZmYiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sLDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMTAwIDEwMCc+PHJlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIGZpbGw9JyUyMzBmMGYxMCcgcng9JzIwJy8+PHRleHQgeT0nLjllbScgeD0nNTAlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzcwJz7wn4ymPC90ZXh0Pjwvc3ZnPiIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9zdmcreG1sIiwicHVycG9zZSI6ImFueSBtYXNrYWJsZSJ9XX0=">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.json">
 
 <style>
   :root {
@@ -329,9 +329,9 @@ function saveThought() {
 
 render();
 
-// Register service worker for PWA
+// Register service worker for PWA (caches the app shell for offline use)
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('data:text/javascript,');
+  navigator.serviceWorker.register('./sw.js');
 }
 </script>
 </body>
